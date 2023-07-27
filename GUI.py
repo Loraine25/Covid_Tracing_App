@@ -74,3 +74,12 @@ class ContactTracingAppGUI:
         self.results_text.config(state=tk.DISABLED)
         self.results_text.grid(row=9, column=0, columnspan=2, pady=10)
 
+# Apply border style to the main frame
+        main_frame.configure(style='Medical.TFrame')
+
+    def add_entry(self):
+        name = self.name_var.get()
+        phone = self.phone_var.get()
+        date = self.date_var.get()
+        location = self.location_var.get()
+
