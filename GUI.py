@@ -69,3 +69,8 @@ class ContactTracingAppGUI:
         search_button = tk.Button(main_frame, text="Search", command=self.search_entry, font=font_style)
         search_button.grid(row=8, column=0, columnspan=2, pady=10)
 
+# Results Text widget
+        self.results_text = tk.Text(main_frame, height=10, width=50, font=font_style)
+        self.results_text.config(state=tk.DISABLED)
+        self.results_text.grid(row=9, column=0, columnspan=2, pady=10)
+
