@@ -40,3 +40,14 @@ class ContactTracingAppGUI:
         location_entry = tk.Entry(main_frame, textvariable=self.location_var, font=font_style)
         location_entry.grid(row=3, column=1, pady=10)
 
+# Add Entry button
+        add_button = tk.Button(main_frame, text="Add Entry", command=self.add_entry, font=font_style)
+        add_button.grid(row=5, column=0, columnspan=2, pady=10)
+
+# Search Entry section
+        search_label = tk.Label(main_frame, text="Search:", font=font_style)
+        search_label.grid(row=6, column=0, pady=10)
+        self.search_var = tk.StringVar()
+        search_entry = tk.Entry(main_frame, textvariable=self.search_var, font=font_style)
+        search_entry.grid(row=6, column=1, pady=10)
+
