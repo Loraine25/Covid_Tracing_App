@@ -51,3 +51,21 @@ class ContactTracingAppGUI:
         search_entry = tk.Entry(main_frame, textvariable=self.search_var, font=font_style)
         search_entry.grid(row=6, column=1, pady=10)
 
+# Search Criteria Radiobuttons
+        self.search_criteria_var = tk.StringVar()
+        self.search_criteria_var.set("Name")  # Default search criteria
+        search_criteria_frame = ttk.Frame(main_frame, style='Medical.TFrame')
+        search_criteria_frame.grid(row=7, column=0, columnspan=2, pady=10)
+
+        name_radio = tk.Radiobutton(search_criteria_frame, text="Name", variable=self.search_criteria_var,
+                                    value="Name", font=font_style)
+        name_radio.pack(side=tk.LEFT, padx=5)
+
+        phone_radio = tk.Radiobutton(search_criteria_frame, text="Phone", variable=self.search_criteria_var,
+                                     value="Phone", font=font_style)
+        phone_radio.pack(side=tk.LEFT, padx=5)
+
+# Search Button
+        search_button = tk.Button(main_frame, text="Search", command=self.search_entry, font=font_style)
+        search_button.grid(row=8, column=0, columnspan=2, pady=10)
+
