@@ -37,3 +37,21 @@ def search_entry():
             print("--------------------")
     else:
         print("No entries found.")
+
+# Main program loop
+while True:
+    print("\nCOVID Contact Tracing App")
+    print("1. Add Entry")
+    print("2. Search Entry")
+    print("3. Exit")
+    
+    choice = input("Enter your choice (1/2/3): ")
+    if choice == "1":
+        add_entry()
+    elif choice == "2":
+        search_entry()
+    elif choice == "3":
+        print("Exiting the program. Thank you!")
+        break
+    else:
+        print("Invalid choice. Please try again.")
