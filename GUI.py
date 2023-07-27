@@ -83,3 +83,14 @@ class ContactTracingAppGUI:
         date = self.date_var.get()
         location = self.location_var.get()
 
+# Your add_entry logic here...
+
+    def search_entry(self):
+        search_term = self.search_var.get()
+        search_criteria = self.search_criteria_var.get()
+
+if __name__ == "__main__":
+    root = tk.Tk()
+    ContactTracingAppGUI(root)
+    root.mainloop()
+
